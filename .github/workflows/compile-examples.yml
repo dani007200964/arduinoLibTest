@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: arduino/coompile-sketches@v1
+      - uses: arduino/compile-sketches@v1
         with:
           fqbn: ${{ matrix.fqbn }}
 
