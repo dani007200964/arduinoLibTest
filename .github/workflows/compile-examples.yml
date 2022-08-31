@@ -1,0 +1,23 @@
+on:
+  - push
+  - pull
+
+jobs:
+  compile-examples:
+    runs-on ubuntu-latest
+
+    strategy:
+      matrix:
+        fqbn:
+          - arduino:avr:uno
+          - arduino:avr:nano
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: arduino/coompile-sketches@v1
+        with:
+          fqbn: ${{ matrix.fqbn }}
+
+          sketch-paths: |
+            - examples/test_one
+            - examples/test_two
