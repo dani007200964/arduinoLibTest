@@ -9,8 +9,9 @@ jobs:
     strategy:
       matrix:
         fqbn:
-          - arduino:avr:uno
+          - arduino:avr:micro
           - arduino:avr:nano
+          - arduino:avr:mega
 
     steps:
       - uses: actions/checkout@v3
