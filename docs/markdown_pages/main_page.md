@@ -10,6 +10,10 @@ __Introduction__
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
     </div>
+
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
 </model-viewer>
 
 
