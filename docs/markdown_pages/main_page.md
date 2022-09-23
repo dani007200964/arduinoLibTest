@@ -1,4 +1,4 @@
-@mainpage Viking Skull Lamp
+@mainpage Test
 
 __Introduction__
 
@@ -10,17 +10,10 @@ __Introduction__
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
     </div>
-    <button slot="ar-button" id="ar-button">
-        View in your space
-    </button>
     <div id="ar-prompt">
         <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
     </div>
 </model-viewer>
-
-<script>
-    document.getElementById('glb').src=
-</script>
 
 
 \endhtmlonly
